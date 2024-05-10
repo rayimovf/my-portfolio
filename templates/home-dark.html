@@ -1,0 +1,829 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Farrukhbek - Personal Portfolio">
+
+    <!-- ========== Page Title ========== -->
+    <title>Farrukhbek - Personal Portfolio</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/themify-icons.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/elegant-icons.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/flaticon-set.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/swiper-bundle.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/animate.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/validnavs.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/helper.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/unit-test.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" type="text/css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5/html5shiv.min.js' %}"></script>
+      <script src="{% static 'assets/js/html5/respond.min.js' %}"></script>
+    <![endif]-->
+
+</head>
+
+<body class="bg-fixed dark-layout" style="background-image: url({% static 'assets/img/shape/banner-2.jpg' %});">
+
+    <!-- Start Preloader 
+    ============================================= -->
+    <div id="preloader">
+        <div id="ambrox-preloader" class="ambrox-preloader">
+            <div class="animation-preloader">
+                <div class="spinner"></div>
+                <div class="txt-loading">
+                    <span data-text-preloader="F" class="letters-loading">
+                        F
+                    </span>
+                    <span data-text-preloader="A" class="letters-loading">
+                        A
+                    </span>
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="R" class="letters-loading">
+                        R
+                    </span>
+                    <span data-text-preloader="U" class="letters-loading">
+                        U
+                    </span>
+                    <span data-text-preloader="K" class="letters-loading">
+                        K
+                    </span>
+                    <span data-text-preloader="H" class="letters-loading">
+                        H
+                    </span>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+
+    <!-- Header 
+    ============================================= -->
+    <header id="home">
+        <!-- Start Navigation -->
+        <nav class="navbar mobile-sidenav onepage-menu mobile-nav-only attr-border navbar-sticky navbar-default validnavs navbar-fixed dark no-background">
+
+
+            <div class="container d-flex justify-content-between align-items-center">            
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="{% static 'assets/img/logo.png' %}" class="logo" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+
+                    <img src="{% static 'assets/img/logo.png' %}" alt="Logo">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a class="smooth-menu" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#expertise">expertise</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#portfolio">portfolio</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#about">about</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#blog">blog</a>
+                        </li>
+                        <li>
+                            <a class="smooth-menu" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+                <!-- Main Nav -->
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Header Fixed 
+    ============================================= -->
+    <header class="header-fixed">
+        <div class="f-flex">
+            <div class="logo">
+                <a href="#home"><img src="{{ information.logo.url }}" alt="Logo"></a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li>
+                        <a class="smooth-menu" href="#home">
+                            <i class="fas fa-home"></i>
+                            <div class="menu-name">Home</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#services">
+                            <i class="fas fa-cog"></i>
+                            <div class="menu-name">Services</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#portfolio">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="menu-name">Portfolio</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#about">
+                            <i class="fas fa-user"></i>
+                            <div class="menu-name">About</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#resume">
+                            <i class="fas fa-file-alt"></i>
+                            <div class="menu-name">Resume</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="smooth-menu" href="#contact">
+                            <i class="fas fa-comments"></i>
+                            <div class="menu-name">Contact</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="video">
+                <a href="{{ information.video.url }}" class="popup-youtube video-play-button theme">
+                    <i class="fas fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Fixed -->
+
+   <!-- Start Banner 
+    ============================================= -->
+    <div class="auto-height bg-fixed banner-style-one">
+        <div class="container">
+            <div class="double-items">
+                <div class="row align-center">
+
+                    <div class="col-lg-6 info">
+                        <h1 class="text-invisible">WELCOME</h1>
+                        <h2>{{ myhome.title }}</h2>
+                        <h3 class="title">
+                            <span class="header-caption" id="page-top">
+                                <!-- type headline start-->
+                                <span class="cd-headline clip is-full-width">
+                                    <!-- ROTATING TEXT -->
+                                    <span class="cd-words-wrapper">
+                                        {% for i in myhome.position.all %}
+                                        <b class="is-visible">{{ i.name }}</b>
+                                        {% endfor %}
+                                    </span>
+                                </span>
+                                <!-- type headline end -->
+                            </span>
+                        </h3>
+                        <div class="button mt-55">
+                            <a class="btn btn-md circle btn-theme effect" href="#resume">My Resume</a>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-6 thumb" data-wow-delay="900ms">
+                        <img class=" wow fadeInDown" src="{% static 'assets/img/illustration/1.png' %}" alt="Thumb">
+                        <div class="shape-center">
+                            <img src="{% static 'assets/img/shape/7.png' %}" alt="Thumb">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="personal-social">
+                    <ul>
+                        <li class="facebook">
+                            <a href="{{ information.facebook }}">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="{{ information.linkedin }}">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="github">
+                            <a href="{{ information.github }}">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="telegram">
+                            <a href="{{ information.telegram }}">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Start Services
+    ============================================= -->
+    <div id="services" class="services-style-one-area box-layout default-padding bottom-less bg-light">
+        <div class="blur-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">My Expertise</h4>
+                        <h2 class="title">What I Do </h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                {% for i in services %}
+                <!-- Single Item -->
+                <div class="service-style-one col-lg-4 col-md-6">
+                    <div class="service-style-one-item">
+                        <img src="{{ i.icon.url }}" alt="Icon">
+                        <h4><a>{{ i.title }}</a></h4>
+                        <p>
+                            {{ i.description }}
+                        </p>
+                    </div>
+                </div>
+                <!-- End Single Item -->
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+    <!-- Start Portfolio
+    ============================================= -->
+    <div id="portfolio" class="portfolio-style-six-area default-padding-top">
+        <div class="shape-animated-right">
+            <img src="{% static 'assets/img/shape/1.webp' %}" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="heading-left">
+                <div class="row align-center">
+                    <div class="col-lg-5">
+                        <div class="left-info">
+                            <h5 class="sub-title">Recent Work</h5>
+                            <h2 class="title">Look at my portfolio and <br> give me your feedback</h2>
+                            <div class="heading-shape">
+                                <img src="{% static 'assets/img/shape/10.png' %}" alt="Shape">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 gallery-content mb--15">
+                    <div class="magnific-mix-gallery masonary">
+                        <div id="portfolio-grid" class="gallery-items colums-3">
+                            <!-- Single Item -->
+                            {% for i in portfolio %}
+                            <div class="pf-item">
+                                <div class="overlay-content">
+                                    <img src="{{ i.image.url }}" alt="thumb">
+                                    <div class="content">
+                                        <div class="title">
+                                            <span>{{ i.name }}</span>
+                                            <h5><a data-bs-toggle="modal" data-bs-target="#projectSingleModal{{ i.id }}">{{ i.service }}</a></h5>
+                                        </div>
+                                        <a data-bs-toggle="modal" data-bs-target="#projectSingleModal{{ i.id }}"><i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!-- End Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Projects Single Modal -->
+    {% for i in portfolio %}
+        <div class="modal fade" id="projectSingleModal{{ i.id }}" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="project-details-items">
+                            <div class="project-thumb">
+                                <img src="{{ i.banner.url }}" alt="Thumb">
+                            </div>
+                            <div class="top-info">
+                                <div class="row">
+                                    <div class="col-xl-12 left-info">
+                                        <div class="project-info mt-md-50 mt-xs-40 mb-40">
+                                            <div class="content">
+                                                <ul class="project-basic-info">
+                                                    <li>
+                                                        Client <span>{{ i.client }}</span>
+                                                    </li>
+                                                    <li>
+                                                        Project Type <span>{{ i.project_type }}</span>
+                                                    </li>
+                                                    <li>
+                                                        Date <span>{{ i.date }}</span>
+                                                    </li>
+                                                    {% if i.github_link %}
+                                                    <li>
+                                                        Check it out on github View <span><h3 class="sub-title"><a href="{{ i.github_link }}">View</a></h3></span>
+                                                    </li>
+                                                    {% endif %}
+                                                    {% if i.figma_link %}
+                                                    <li>
+                                                        Link for Figma <span><h3 class="sub-title"><a href="{{ i.figma_link }}">View</a></h3></span>
+                                                    </li>
+                                                    {% endif %}
+                                                    {% if i.website_link %}
+                                                    <li>
+                                                        Visit the website <span><h3 class="sub-title"><a href="{{ i.website_link }}">View</a></h3></span>
+                                                    </li>
+                                                    {% endif %}
+                                                </ul>
+                                                <ul class="social">
+                                                    <li>
+                                                        <h4>Share:</h4>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/?lang=ru"><i class="fab fa-twitter"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://ru.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://github.com/"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h2>{{ i.name }}</h2>
+                                        <p>
+                                            {{ i.about }}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+        <!-- End Projects Single Modal -->
+    </div>
+    <!-- End Portfolio -->
+    <!-- Start About
+    ============================================= -->
+    <div id="about" class="about-style-six-area default-padding-top">
+        <div class="container">
+            <div class="row align-center">
+                <div class="about-style-six col-lg-5">
+                    <div class="thumb">
+                        <img class="wow fadeInUp" src="{{ about_me.photo.url }}" alt="Thumb">
+                    </div>
+                </div>
+                <div class="about-style-six col-lg-6 offset-lg-1">
+                    <h4 class="sub-title">About Me</h4>
+                    <h2 class="title">{{ about_me.title }}</h2>
+                    <p>
+                        {{ about_me.bio }}
+                    </p>
+                    <div class="skill-list">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="content">
+                                    <h4>{{ about_me.position }}</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End About -->
+    <!-- Start Resume
+    ============================================= -->
+    <div id="resume" class="resume-area default-padding-top">
+        <div class="shape-right-top-extra">
+            <img src="{% static 'assets/img/shape/14.png' %}" alt="Shape">
+        </div>
+        <div class="container">
+            <div class="experience-content-box">
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+    
+                        <div class="nav nav-tabs text-center resume-tab-navs" id="nav-tab" role="tablist">
+    
+                            <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
+                                Biography <strong>01</strong>
+                            </button>
+                            <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
+                                Skills <strong>02</strong>
+                            </button>
+                            <button class="nav-link" id="nav-id-3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">
+                                Education <strong>03</strong>
+                            </button>
+                        </div>
+                        <div class="tab-content resume-tab-content" id="nav-tabContent">
+                            <!-- Single Item -->
+                            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="biography-table">
+                                            <li>
+                                                <h5>Name</h5>
+                                                <p>
+                                                    {{ resume.biography.full_name }}
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Birthday</h5>
+                                                <p>
+                                                    {{ resume.biography.birthday }}
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Age</h5>
+                                                <p>
+                                                    {{ resume.biography.age }}
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Email</h5>
+                                                <p>
+                                                    {{ resume.biography.email }}
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <h5>Phone</h5>
+                                                <p>
+                                                    {{ resume.biography.phone }}
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
+                                <div class="row align-center">
+                                    <div class="col-lg-12">
+                                        <ul class="skill-table">
+                                            {% for i in resume.skills.all %}
+                                            <li>
+                                                <div class="row align-center">
+                                                    <div class="col-lg-2">
+                                                        <div class="icon">
+                                                            <i class="fab fa-laravel"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <h4>{{ i.name }}</h4>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="progress-box">
+                                                            <h5>{{ i.percent }}%</h5>
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" data-width="{{ i.percent }}"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="nav-id-3">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="education-table">
+                                            {% for i in resume.education.all %}
+                                            <li>
+                                                <h4>{{ i.title }}</h4>
+                                                <h5>{{ i.name }}</h5>
+                                                <span>{{ i.date }}</span>
+                                                <p>
+                                                    {{ i.description }}
+                                                </p>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Resume -->
+    <!-- Start Available 
+    ============================================= -->
+    <div class="work-available-area text-center box-layout bg-light default-padding">
+        <div class="shape-right-top-mini">
+            <img src="{% static 'assets/img/shape/16.png' %}" alt="illustration">
+        </div>
+        <div class="shape-illustration">
+            <img src="{% static 'assets/img/illustration/2.png' %}" alt="illustration">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="work-available">
+                        <h2 class="title">I'm <strong>available</strong> for <br> freelance work</h2>
+                        <a class="btn btn-md circle btn-theme smooth-menu" href="#contact">Hire me now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Available -->
+    <!-- Start Blog
+    ============================================= -->
+    {% if news %}
+    <div id="blog" class="blog-style-one-area blog-area default-padding-top bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h4 class="sub-title">News</h4>
+                        <h2 class="title">Latest from blog</h2>
+                        <div class="devider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Single item -->
+                {% for i in news %}
+                <div class="blog-style-one mb-30 col-lg-4 col-md-6">
+                    <div class="item">
+                        <div class="thumb">
+                            <a><img src="{{ i.image.url }}" alt="Thumb"></a>
+                        </div>
+                        <div class="info">
+                            <h4>
+                                <a>{{ i.title }}</a>
+                            </h4>
+                            <div class="meta">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar-alt"></i>{{ i.date }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- End Single item -->
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <!-- End Blog -->
+    <!-- Start Contact Area
+    ============================================= -->
+    <div id="contact" class="contact-area shape-less default-padding overflow-hidden">
+        <h2 class="text-shade">Contact</h2>
+        <div class="container">
+            <div class="contact-content">
+                <div class="row align-center">
+                    <div class="col-lg-7 contact-form-box mb-md-50 mb-xs-50">
+                        <div class="form-box">
+                            <h2>Let's talk?</h2>
+                            <p>
+                               Send us your questions
+                            </p>
+                            <form class="contact-comments" action="{% url 'create-contact' %}" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}        
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <!-- Name -->
+                                            <input name="name" class="form-control" placeholder="Name *" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <!-- Email -->
+                                            <input name="email" class="form-control" placeholder="Email *" type="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <!-- Phone -->
+                                            <input name="phone" class="form-control" placeholder="Phone *" type="text" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group comments">
+                                            <!-- Comment -->
+                                            <textarea name="message" class="form-control" placeholder="Comment" required></textarea>
+                                        </div>
+                                        <div class="form-group full-width submit">
+                                            <button class="btn btn-animation dark border" type="submit">Post Comment</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 offset-lg-1 info">
+                        <div class="content">
+                            <ul>
+                                <li class="contact-info-list wow fadeInUp">
+                                    <div class="icon">
+                                        <i class="fas fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Our Email</p>
+                                        <h5>
+                                            <a href="{{ information.email_one }}">{{ information.email_one }}</a>
+                                            <br> 
+                                            <a href="{{ information.email_two }}">{{ information.email_two }}</a>
+                                        </h5>
+                                    </div>
+                                </li>
+                                <li class="contact-info-list wow fadeInUp" data-wow-delay="300ms">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Address</p>
+                                        <h5>
+                                            {{ information.address }}
+                                        </h5>
+                                    </div>
+                                </li>
+                                <li class="contact-info-list wow fadeInUp" data-wow-delay="500ms">
+                                    <div class="icon">
+                                        <i class="fas fa-headphones-alt"></i>
+                                    </div>
+                                    <div class="info">
+                                        <p>Phone</p>
+                                        <h5>
+                                            <a href="tel:{{ information.phone_number_one }}">{{ information.phone_number_one }}</a>
+                                            <br><a href="tel:{{ information.phone_number_two }}">{{ information.phone_number_two }}</a>
+                                        </h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact Area -->
+    <!-- Start Footer
+    ============================================= -->
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <ul class="footer-social">
+                        <li class="facebook">
+                            <a href="{{ information.facebook }}">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="{{ information.linkedin }}">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a href="{{ information.instagram }}">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="telegram">
+                            <a href="{{ information.telegram }}">
+                                <i class="fab fa-telegram-plane"></i>
+                            </a>
+                        </li>
+                        <li class="github">
+                            <a href="{{ information.github }}">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p>&copy; 2024 Farruhkbek.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/modernizr.custom.13711.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/progress-bar.min.js' %}"></script>
+    <script src="{% static 'assets/js/circle-progress.js' %}"></script>
+    <script src="{% static 'assets/js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/count-to.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.scrolla.min.js' %}"></script>
+    <script src="{% static 'assets/js/YTPlayer.min.js' %}"></script>
+    <script src="{% static 'assets/js/TweenMax.min.js' %}"></script>
+    <script src="{% static 'assets/js/typed.js' %}"></script>
+    <script src="{% static 'assets/js/validnavs.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>
